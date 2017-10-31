@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+
+const Hero = styled.div`
+  background: lightgreen;
+  width: 100%;
+  height: 55vw;
+  position: relative;
+`
+const HeroTitle = styled.h1`
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+`
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Hero>
+          <HeroTitle>Hier Bin ich</HeroTitle>
+        </Hero>
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to my portfolio</h2>
         </div>
         <p className="App-intro">
